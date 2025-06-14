@@ -13,7 +13,7 @@ echo "=== 开始配置用户 $USERNAME ==="
 # 1. 安装必要软件包
 echo "安装依赖包..."
 opkg update
-opkg install shadow-useradd shadow-usermod sudo tailscale ethtool || {
+opkg install shadow-useradd shadow-usermod sudo tailscale ethtool kmod-tcp-bbr iproute2 || {
     echo "错误：软件包安装失败"
     exit 1
 }
