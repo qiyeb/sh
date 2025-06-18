@@ -5,7 +5,7 @@ set -e  # 任何命令失败则退出脚本
 
 # 配置变量
 USERNAME="kjds"
-PASSWORD="super-sheng*v0"  # 生产环境建议使用更复杂的密码
+read -p "请输入管理员密码: " PASSWORD
 SSH_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDhfj3fbJMaMImfjlE4SrlkERz8d8FJhfhl45aoV98yrI+aPQl1n3SmiHiXcOoFdPJyergKsljjxgeHqJYMJPpau+rYjV72/hckuk1+2udpe3/2TSST/lcTgy9xcP1nqyz6zJdcXxYhQiVJfWgvmmBuvlrNkJNKN7VyuCo7HgOnUYx+SHAo2HfxcZgesY542VdrBAqjrV3n2ukbZuqx0PZmqH4CHAsDK+eiCiqXmcP2kCf2nnCulvMOHkSjk0gLbx9WgQIzvHVT/+7vyZb4cFCWuAhF52BfR6TyzkkiZ9R0LAjIQWNo0Myr9wkP2LBNwrLRfkxihEYGUEpyg+lp409mt8p8XynnwWcHmRzI/vKCKckzSNlSwRA0AtveX8tvqyILhi7LyEL07h6bCLqBagYsvhZd/xxYmATUmlC4DbK77zHzBCv52pPenthEGllEVcxcSQM0jh5oUNq7mX2vw/Af0DtaX05YA4JldOM2Bbtmn85ylmJRPGrdTFV1cT1Ig8GdF9Y7YwBZ/7dgzNT8MjZwyP41rRUVgohaom74Lftk3f3XKSDm1Dbs5sGG35PLlOriCISuijDPqArDgowjCv7h4ImUTC1TL9FlueFWziMPfp8QuairZDVmevSradEskU9EP2A1aXmk1SYtTd61yLog2YfcizA4XUHmJWPTScFnYw== KJDS@example.com"  # 替换为你的公钥
 
 echo "=== 开始配置用户 $USERNAME ==="
